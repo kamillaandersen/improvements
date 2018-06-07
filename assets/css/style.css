@@ -1,0 +1,440 @@
+ body {
+   background-color: #303030;
+   margin: 0;
+   overflow-x: hidden;
+ }
+
+/* Til header */
+header {
+background-color: #282828;
+height: 80px;
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+border-bottom: 2px solid;
+border-color: #116db6;
+}
+
+header img {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+height: 50px;
+width: 50px;
+padding-top: 10px;
+padding-left: 50px;
+padding-bottom: 10px;
+margin: 0;
+
+}
+
+header ul {
+display: flex;
+flex: 1;
+justify-content: space-around;
+align-items: center;
+margin: 0;
+padding-right: 30%;
+padding-left: 25%;
+}
+
+header li {
+list-style: none;
+margin: 0;
+color: white;
+display: flex;
+font-family: "Play", sans-serif;
+font-size: 20px;
+}
+
+h1 {
+  font-family: "Play", sans-serif;
+  color: white;
+  text-align: center;
+  margin: 50px;
+  width: 400px;
+}
+.h1container {
+  display: flex;
+  justify-content: center;
+}
+nav {
+  z-index: 1;
+}
+.top-nav ul{
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+background: #282828;
+}
+
+.top-nav li a, .col p{
+padding: 20px;
+margin: 0;
+color: #fff;
+text-decoration: none;
+display: block;
+}
+
+.top-nav {
+}
+
+.col p {
+text-decoration: underline;
+}
+
+.top-nav li a:hover{
+background: rgba(0,0,0,.4);
+}
+
+.top-nav li{
+display: block;
+}
+
+.top-nav .inner-nav{
+display: none;
+position: absolute;
+left: 0;
+right: 0;
+background: #282828;
+color: #fff;
+}
+
+.top-nav li:hover .inner-nav{
+display: block;
+}
+
+.inner-nav>div{
+display:flex;
+justify-content: center;
+}
+
+/*.box {
+  margin-left: 300px;
+}*/
+
+.top-nav {
+  margin-right: 160px;
+}
+
+.logo {
+  padding-right: 30px;
+}
+
+
+
+/*responsive nav*/
+.resp-nav li, a {
+  list-style: none;
+  margin: 0;
+  color: white;
+  display: flex;
+  font-family: "Play", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.resp-nav ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  background: #282828;
+}
+
+
+/* Til Logo med orange trekanter under header */
+.orangelogo {
+  width: 100%;
+  height:100px;
+  padding-bottom: 25px;
+  padding-top: 5px;
+
+}
+
+.orangelogo img {
+  height: 100px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Til Banner */
+
+.slideshow{
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 25%;
+  position: relative;
+}
+
+.slideshow img {
+  display:none;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /*Defines a translation, using only the value for the Y-axis*/
+  z-index: 0;
+}
+
+/* Til Text og billederne til Landing Page */
+.textandpictureforLP .partners {
+  display: flex;
+  justify-content: center;
+}
+
+.partners {
+padding-bottom: 10px;
+}
+
+.partners p {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.pictureforLP {
+  background-color: white;
+  height: 302px;
+  width: 350px;
+}
+.pictureforLP img {
+  height: 304px;
+  width: 350px;
+}
+
+.textboxforLP {
+  background-color: #303030;
+  height: 300px;
+  width: 350px;
+  border: 2px solid;
+  border-color: #116db6;
+  overflow: auto;
+}
+.textboxforLP p, .textboxforBD p, .bundle p, .textboxforbundles .bundle2 p {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.bundletext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+
+}
+
+.bundle {
+  background-color: #ff8c00;
+  height: 233px;
+  width: 233px;
+  border: 2px solid;
+  border-left-color: #303030;
+  border-top-color: #303030;
+  border-bottom-color: #303030;
+  border-right-color: #303030;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bundle2 {
+  background-color: #116DB6;
+  height: 233px;
+  width: 233px;
+  border: 2px solid;
+  border-left-color: #303030;
+  border-top-color: #303030;
+  border-bottom-color: #303030;
+  border-right-color: #303030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bundle p {
+  margin: 3px;
+}
+
+.bundle2 p {
+  margin: 3px;
+}
+
+
+/* Til den orange skæv linje */
+.orangeline {
+  margin-top: 90px;
+  margin-bottom: 100px;
+  background-color: #ff8c00;
+  height: 100px;
+  width: auto;
+  transform: rotate(-6deg);
+}
+.orangeline h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding-top: 15px;
+  font-family: 'Kanit', sans-serif;
+}
+
+/* Til form */
+.contactcontainer {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: center;
+  max-width: 800px;
+  color: white;
+  background-color: grey;
+  align-items: center;
+  margin: 0;
+  padding: 0 10px 0 10px;
+}
+
+.booking {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+.contactcontainer p {
+  margin: 20px;
+  max-width: 700px;
+  width: 100%;
+
+}
+
+.contactcontainer h2 {
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+
+input[text=text] {
+  border: 0.5px solid grey;
+  padding: 12px 10px;
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  align-items: center;
+  border-radius: 7px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #282828;
+  color: white;
+  border: 1px solid #ff8c00;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px;
+  margin: 20px;
+  width: 230px;
+  font-size: 20px;
+  font-family: "Play", sans-serif;
+  display: flex;
+}
+
+/*T Riptide */
+.riptide {
+  background-color: #303030;
+  padding: 20px;
+  max-width: 700px;
+  margin: 0;
+  border: 2px solid;
+  border-color: #116db6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.riptide p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+
+}
+
+.buttonriptide {
+  background-color: #282828;
+  color: white;
+  border: 1px solid #ff8c00;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px;
+  margin: 0;
+  height: 55px;
+  font-size: 20px;
+  font-family: "Play", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 260px;
+  text-align: center;
+}
+
+/* Til footer */
+
+footer {
+  color: white;
+  background-color: #282828;
+  font-family: "Play", sans-serif;
+  height: 250px;
+  border-top: 2px solid;
+  border-color: #116db6;
+}
+.contactinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 600px;
+    width: auto;
+  }
+
+  .top-nav, header {
+    display: none;
+  }
+
+  .resp-nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .textandpictureforLP, .partners, .textboxforLP, .pictureforLP, .pictureforLP img {
+    flex-direction: column;
+    width: 100%;
+
+  }
+.textboxforLP {
+  height: 100%;
+  overflow: visible;
+}
+
+  .partners {
+    align-items: center;
+  }
+
+  .orangeline {
+    height: 165px;
+    width: auto;
+    text-align: center;
+    margin: 0;
+  }
+
+  .orangeline h2 {
+    padding: 5px;
+  }
+  .contactinfo {
+    align-items: center;
+  }
+}
