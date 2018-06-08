@@ -185,7 +185,7 @@ justify-content: center;
   flex: 1;
 }
 .content-area {
-  min-width: 960px;
+  max-width: 960px;
   width: 100%;
 }
 
