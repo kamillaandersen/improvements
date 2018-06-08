@@ -180,6 +180,27 @@ justify-content: center;
 }
 
 /* Til Text og billederne til Landing Page */
+.content-wrapper{
+  display: flex;
+  flex: 1;
+}
+.content-area {
+  min-width: 960px;
+  width: 100%;
+}
+
+.text-area {
+  text-align: center;
+  width: 960px;
+}
+
+.text-area p {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px
+}
+
 .textandpictureforLP .partners {
   display: flex;
   justify-content: center;
