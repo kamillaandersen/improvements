@@ -180,26 +180,7 @@ justify-content: center;
 }
 
 /* Til Text og billederne til Landing Page */
-.content-wrapper{
-  display: flex;
-  flex: 1;
-}
-.content-area {
-  min-width: 960px;
-  width: 100%;
-}
 
-/*.text-area {
-  text-align: center;
-  width: 960px;
-}*/
-
-.text-area p {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 10px
-}
 
 .textandpictureforLP .partners {
   display: flex;
@@ -217,20 +198,28 @@ padding-bottom: 10px;
   text-align: center;
 }
 
+.content-row{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .pictureforLP {
-  background-color: white;
-  height: 302px;
-  width: 350px;
+  background-color: #1f1f1f;
+  max-width: 50%;
+  display: flex;
+  align-items: center;
 }
 .pictureforLP img {
-  height: 304px;
-  width: 350px;
+  /*height: 304px;
+  width: 350px;*/
+  max-width: 100%;
+  display: block;
 }
 
 .textboxforLP {
-  background-color: #303030;
-  height: 300px;
-  width: 350px;
+  max-width: 50%;
+  background-color: #1f1f1f;
   border: 2px solid;
   border-color: #116db6;
   overflow: auto;
@@ -295,75 +284,62 @@ padding-bottom: 10px;
   align-items: center;
 }
 
-.fivepeople {
-  height: 500px;
-  width: 700px;
-  margin: 8px;
-}
-
+.fivepeople,
 .sixpeople {
-  height: 500px;
-  width: 700px;
   margin: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 50%;
+  box-sizing: border-box;
 }
 
+
+
+.coach,
+.ferie,
 .weekend {
   border: 2px solid #ff8c00;
   border-bottom: none;
-  height: 170px;
-  width: 700px;
+  padding: 5px;
 }
 
-.coach {
-  border: 2px solid #ff8c00;
-  height: 170px;
-  width: 700px;
-  border-bottom: none;
-}
 
-.ferie {
-  border: 2px solid #ff8c00;
-  height: 170px;
-  width: 700px;
-}
-
-.weekendsix {
-  border: 2px solid #116DB6;
-  border-bottom: none;
-  height: 170px;
-  width: 700px;
-}
-
-.coachsix {
-  border: 2px solid #116DB6;
-  height: 170px;
-  width: 700px;
-  border-bottom: none;
-}
-
+.weekendsix,
+.coachsix,
 .feriesix {
   border: 2px solid #116DB6;
-  height: 170px;
-  width: 700px;
+  border-bottom: none;
+  padding: 5px;
 }
 
+.ferie{
+  border: 2px solid #ff8c00;
+}
+.feriesix{
+  border: 2px solid #116DB6;
+}
 
 /* Til den orange skæv linje */
 .orangeline {
+  display: flex;
   margin-top: 90px;
   margin-bottom: 100px;
   background-color: #ff8c00;
   height: 100px;
-  width: auto;
+  margin-right: -10%;
+  margin-left: -10%;
   transform: rotate(-6deg);
 }
 .orangeline h2 {
+  margin:0;
   color: white;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 50px;
-  padding-top: 15px;
   font-family: 'Kanit', sans-serif;
+  flex: 1;
 }
 
 /* Til form */
@@ -430,7 +406,7 @@ input[type=submit] {
 .riptide {
   background-color: #303030;
   padding: 20px;
-  max-width: 700px;
+  width: 100%;
   margin: 0;
   border: 2px solid;
   border-color: #116db6;
