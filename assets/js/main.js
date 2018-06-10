@@ -13,23 +13,23 @@ function carousel() {
     setTimeout(carousel, 4000); // Change image every 4 seconds
 }
 
-function Booking(bookingName, bookingCity, bookingPhone, bookingMail, bookingDate, bookingPersons) {
-	this.navn = bookingName;
-	this.city = bookingCity;
-	this.phone = bookingPhone;
-	this.mail = bookingMail;
-	this.date = bookingDate;
+function Booking(bookingDate, bookingPersons, bookingSleep, bookingName, bookingMail, bookingPhone) {
+  this.date = bookingDate;
   this.persons = bookingPersons;
+  this.sleepover = bookingSleep;
+	this.navn = bookingName;
+  this.mail = bookingMail;
+	this.phone = bookingPhone;
 }
 
 function addContact() {
   var bookingName = document.getElementById("name").value;
-  var bookingCity = document.getElementById("city").value;
+  var bookingSleep = document.getElementById("sleep").value;
   var bookingPhone = document.getElementById("phone").value;
   var bookingMail = document.getElementById("mail").value;
   var bookingDate = document.getElementById("date").value;
   var bookingPersons = document.getElementById("persons").value
-  var booking = new Booking(bookingName, bookingCity, bookingPhone, bookingMail, bookingDate, bookingPersons);
+  var booking = new Booking(bookingDate, bookingPersons, bookingSleep, bookingName, bookingMail, bookingPhone);
   bookings.push(booking);
   localStorage.setItem("bookings", JSON.stringify(bookings));
   window.location.reload();

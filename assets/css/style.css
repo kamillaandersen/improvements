@@ -331,6 +331,7 @@ padding-bottom: 10px;
   margin-left: -10%;
   transform: rotate(-6deg);
 }
+
 .orangeline h2 {
   margin:0;
   color: white;
@@ -338,22 +339,46 @@ padding-bottom: 10px;
   justify-content: center;
   align-items: center;
   font-size: 50px;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Play", sans-serif;
   flex: 1;
+}
+
+.citat {
+  align-items: center;
+
+}
+
+.citat p {
+  color: white;
+  font-family: "Play", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  max-width: 750px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Til form */
 .contactcontainer {
   display: flex;
   flex-direction: column;
+  border: solid 3px #ff8c00;
   font-family: 'Open Sans', sans-serif;
   justify-content: center;
-  max-width: 800px;
+  max-width: 1000px;
   color: white;
-  background-color: grey;
+  background-color: #616161;
   align-items: center;
   margin: 0;
-  padding: 0 10px 0 10px;
+  padding: 0 30px 0 30px;
+  text-align: center;
+}
+
+.contactcontainer img {
+  display: flex;
+  height: auto;
+  width: 700px;
+  margin-top: -70px;
 }
 
 .booking {
@@ -376,7 +401,7 @@ padding-bottom: 10px;
 }
 
 
-input[text=text] {
+input[type=text] {
   border: 0.5px solid grey;
   padding: 12px 10px;
   display: flex;
