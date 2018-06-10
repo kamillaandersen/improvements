@@ -28,7 +28,11 @@ function addContact() {
   var bookingPhone = document.getElementById("phone").value;
   var bookingMail = document.getElementById("mail").value;
   var bookingDate = document.getElementById("date").value;
-  var bookingPersons = document.getElementById("persons").value
+  var bookingPersons = document.getElementById("persons").value;
+  if (bookingDate, bookingPersons, bookingSleep, bookingName, bookingMail, bookingPhone == "") {
+    alert("Alle felter skal udfyldes");
+    return;
+  }
   var booking = new Booking(bookingDate, bookingPersons, bookingSleep, bookingName, bookingMail, bookingPhone);
   bookings.push(booking);
   localStorage.setItem("bookings", JSON.stringify(bookings));
