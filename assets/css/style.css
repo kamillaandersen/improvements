@@ -53,7 +53,9 @@ h1 {
   color: white;
   text-align: center;
   margin: 50px;
-  width: 400px;
+  width: 600px;
+  font-size: 50px;
+
 }
 .h1container {
   display: flex;
