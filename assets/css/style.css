@@ -337,10 +337,20 @@ padding-bottom: 10px;
   flex: 1;
 }
 
+.specs {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .citat {
   display: flex;
   justify-content: center;
   padding-top: 25px;
+  margin-bottom: 10px;
 
 }
 
