@@ -271,7 +271,9 @@ max-width: 50%;
   margin: 3px;
 }
 /*New bundles*/
-.bundle_title {
+
+
+.bundle_title, .prices {
   display: flex;
   align-items: center;
   justify-content: center;
