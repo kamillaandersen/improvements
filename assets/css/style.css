@@ -235,6 +235,7 @@ max-width: 50%;
 }
 
 .specs {
+  display: flex;
   background-color: #1f1f1f;
   border: 2px solid;
   border-color: #116db6;
