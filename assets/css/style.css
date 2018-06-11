@@ -229,27 +229,9 @@ padding-bottom: 10px;
 
 }
 
-.bundletext {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 40px;
 
-}
 
-.bundle {
-  background-color: #ff8c00;
-  height: 233px;
-  width: 233px;
-  border: 2px solid;
-  border-left-color: #303030;
-  border-top-color: #303030;
-  border-bottom-color: #303030;
-  border-right-color: #303030;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+
 
 .bundle2 {
   background-color: #116DB6;
@@ -292,6 +274,7 @@ padding-bottom: 10px;
   width: 100%;
   max-width: 50%;
   box-sizing: border-box;
+  background-color: #1f1f1f
 }
 
 
@@ -438,6 +421,7 @@ input[type=submit] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #1f1f1f
 }
 
 .riptide p {
