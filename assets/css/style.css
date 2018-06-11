@@ -344,7 +344,9 @@ padding-bottom: 10px;
 }
 
 .citat {
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
 }
 
@@ -353,7 +355,6 @@ padding-bottom: 10px;
   font-family: "Play", sans-serif;
   font-size: 30px;
   text-align: center;
-  max-width: 750px;
   display: flex;
   justify-content: center;
 }
@@ -431,7 +432,6 @@ input[type=submit] {
 .riptide {
   background-color: #303030;
   padding: 20px;
-  width: 100%;
   margin: 0;
   border: 2px solid;
   border-color: #116db6;
