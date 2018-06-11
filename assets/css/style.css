@@ -219,8 +219,8 @@ padding-bottom: 10px;
   display: block;
 }
 
-.textboxforLP {
-  max-width: 50%;
+.textboxforLP, .specs {
+max-width: 50%;
   background-color: #1f1f1f;
   border: 2px solid;
   border-color: #116db6;
@@ -229,11 +229,8 @@ padding-bottom: 10px;
 .textboxforLP p, .textboxforBD p, .bundle p, .textboxforbundles .bundle2 p {
   font-family: 'Open Sans', sans-serif;
 
+
 }
-
-
-
-
 
 .bundle2 {
   background-color: #116DB6;
@@ -343,7 +340,10 @@ padding-bottom: 10px;
   color: white;
   justify-content: center;
   text-align: center;
+  align-items: center;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+
 }
 
 .citat {
