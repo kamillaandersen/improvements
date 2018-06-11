@@ -358,7 +358,10 @@ max-width: 50%;
   align-items: center;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+}
 
+.specs p {
+  margin: 10px;
 }
 
 .citat {
